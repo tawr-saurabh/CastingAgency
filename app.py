@@ -152,7 +152,7 @@ def logout():
     # Clear session stored data
     session.clear()
     # Redirect user to logout endpoint
-    return redirect(AUTH0_BASE_URL + AUTH0_DOMAIN + '/v2/logout?')
+    return redirect(AUTH0_BASE_URL + '/v2/logout?')
 
 
 @app.route('/callback')
