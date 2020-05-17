@@ -143,7 +143,7 @@ db.create_all()
 # -------------------------------------------------------------#
 @app.route('/login')
 def login():
-    link = AUTH0_BASE_URL + AUTH0_DOMAIN + '/authorize?' + 'audience=' + AUTH0_AUDIENCE + '&' + 'response_type=token&' + 'client_id=' + AUTH0_CLIENT_ID + '&' + 'redirect_uri=' + AUTH0_CALLBACK_URL
+    link = AUTH0_BASE_URL + '/authorize?' + 'audience=' + AUTH0_AUDIENCE + '&' + 'response_type=token&' + 'client_id=' + AUTH0_CLIENT_ID + '&' + 'redirect_uri=' + AUTH0_CALLBACK_URL
     return redirect(link)#auth0.authorize_redirect(audience=AUTH0_AUDIENCE, redirect_uri=AUTH0_CALLBACK_URL)
 
 
