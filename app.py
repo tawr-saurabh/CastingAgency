@@ -55,7 +55,7 @@ auth0 = oauth.register(
     api_base_url=AUTH0_BASE_URL,
     redirect_url=AUTH0_CALLBACK_URL,
     access_token_url=AUTH0_BASE_URL + "/oauth/token",
-    authorize_url=AUTH0_BASE_URL + AUTH0_DOMAIN + "/authorize?" #+ 'audience=' + AUTH0_AUDIENCE + '&' + 'response_type=token&' + 'client_id=' + AUTH0_CLIENT_ID + '&' + 'redirect_uri=' + AUTH0_CALLBACK_URL
+    authorize_url=AUTH0_BASE_URL + "/authorize?" #+ 'audience=' + AUTH0_AUDIENCE + '&' + 'response_type=token&' + 'client_id=' + AUTH0_CLIENT_ID + '&' + 'redirect_uri=' + AUTH0_CALLBACK_URL
 )
 
 
