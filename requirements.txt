@@ -1,6 +1,6 @@
 aniso8601==6.0.0
 Authlib==0.14
-certifi==2020.4.5.1
+certifi==2022.12.7
 cffi==1.14.0
 chardet==3.0.4
 Click==7.0
